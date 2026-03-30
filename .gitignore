@@ -1,0 +1,83 @@
+# # Dependencies
+# node_modules/
+
+# # Environment variables
+# .env
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
+
+# # Logs
+# logs
+# *.log
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+
+# # Runtime data
+# pids
+# *.pid
+# *.seed
+# *.pid.lock
+
+# # Coverage directory
+# coverage/
+
+# # Build output
+# dist/
+# build/
+
+# # OS files
+# .DS_Store
+# Thumbs.db
+
+# # Editor / IDE
+# .vscode/
+# .idea/
+
+# # Optional: package lock (keep if needed)
+# # package-lock.json
+
+# # Misc
+# *.tgz
+# *.bak
+# *.tmp
+
+
+# =========================
+# ROOT LEVEL
+# =========================
+.env
+node_modules/
+
+# =========================
+# BACKEND (api)
+# =========================
+api/node_modules/
+api/.env
+
+# =========================
+# FRONTEND (client)
+# =========================
+client/node_modules/
+client/.env
+
+# =========================
+# LOGS
+# =========================
+*.log
+
+# =========================
+# OS / EDITOR FILES
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Build folders
+client/dist/
+api/build/
+
+# Environment variants
+*.env.local
