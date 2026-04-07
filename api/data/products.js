@@ -1,7 +1,7 @@
 const products = [
   {
     name: "Luxury Gold Wristwatch",
-    image: "/images/watch.jpg",
+    image: "./images/watch.jpg",
     description:
       "Premium gold wristwatch crafted with high-quality materials, perfect for formal and casual wear.",
     price: 250,
@@ -11,7 +11,7 @@ const products = [
   },
   {
     name: "Handmade Beaded Necklace",
-    image: "/images/necklace.jpg",
+    image: "./images/necklace.jpg",
     description:
       "Beautifully handmade beaded necklace designed to add elegance and style to any outfit.",
     price: 80,
@@ -21,7 +21,17 @@ const products = [
   },
   {
     name: "Classic Diamond Ring",
-    image: "/images/ring.jpg",
+    image: "./images/ring.jpg",
+    description:
+      "Classic diamond ring with a timeless design, ideal for engagements, weddings, and special occasions.",
+    price: 500,
+    countInStock: 5,
+    rating: 4.8,
+    numReview: 32,
+  },
+  {
+    name: "Classic Diamond Ring",
+    image: "./images/necklace.jpg",
     description:
       "Classic diamond ring with a timeless design, ideal for engagements, weddings, and special occasions.",
     price: 500,

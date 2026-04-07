@@ -6,14 +6,14 @@ const products = require('./data/products')
 
 
 
-router.post('/users', async(req, res)=>{
+router.get('/users', async(req, res)=>{
   await User.deleteMany({})
   const UserSeeder = await User.insertMany(users)
   res.send({UserSeeder})
 })
 
 
-router.post('/products', async(req, res)=>{
+router.get('/products', async(req, res)=>{
   await Product.deleteMany({})
   const ProductSeeder = await Product.insertMany(products)
   res.send({ProductSeeder})

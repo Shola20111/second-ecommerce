@@ -2,15 +2,16 @@ const express = require('express')
 const dotenv = require('dotenv')
 const products = require('./data/products')
 const mongoose = require('mongoose')
+const cors = require('cors')
 const app = express()
 
 dotenv.config()
 
-
+app.use(cors())
 const PORT = process.env.PORT || 9000
 
-
-mongoose.connect(process.env.mongooseDB).then(()=>console.log("DB connected!")).then((err)=>{err})
+``
+mongoose.connect(process.env.mongooseDB).then(()=>console.log("DB connected!")).catch((err)=>console.log({err}))
 
 const databaseSeeder = require('./databaseSeeder')
 const userRoute = require('./routes/User')

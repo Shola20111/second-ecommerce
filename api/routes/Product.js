@@ -6,7 +6,12 @@ const Product = require('../models/Product')
 
 productRoute.get("/", AsynHandler(async (req, res) => {
   const products = await Product.find({});
+  if(!products && products.length === 0){
+    res.status(404)
+    throw new Error("Products Not Found!")
+  }else{
   res.json(products)
+  }
 }))
 
 

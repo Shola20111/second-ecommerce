@@ -5,7 +5,11 @@ export default {
     "./node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: "blue-500", // your custom color
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin')
